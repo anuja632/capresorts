@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Cap Resorts Luxury Sanctuary</title>
+  <meta name="description"
+    content="Plan your perfect escape with Cap Resorts. Get in touch with our concierge team in Palakkad, Kerala for room reservations, packages, and custom retreats.">
+  <meta name="keywords"
+    content="Contact Cap Resorts, Palakkad Kerala Resort, Resort Reservation, WhatsApp Resort Booking, Luxury Hotel Contact">
+  <meta name="author" content="Cap Resorts">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact Us | Cap Resorts">
+  <meta property="og:description"
+    content="Plan Your Perfect Escape With Cap Resorts. Reach out to our 24/7 concierge for reservations, room enquiries, and custom packages.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts: Playfair Display & Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <style>
+    .whatsapp-btn-float {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background-color: #25D366;
+      color: #FFFFFF;
+      border-radius: 50px;
+      padding: 12px 24px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 1040;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn-float:hover {
+      background-color: #1EBE57;
+      color: #FFFFFF;
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    .map-container {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(201, 168, 106, 0.3);
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+  <!-- Floating WhatsApp Booking Button -->
+  <a href="https://wa.me/919995950900" target="_blank" rel="noopener" class="whatsapp-btn-float"
+    aria-label="Chat With Us on WhatsApp">
+    <i class="bi bi-whatsapp fs-5"></i>
+    <span>Chat With Us</span>
+  </a>
+
+  <!-- ==========================================================================
+       1. TRANSPARENT STICKY HEADER
+       ========================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-cap" id="mainNavbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand brand-logo p-0" href="index.html">
+          <img src="images/logo.png" alt="Cap Resort Logo" class="logo">
+        </a>
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler text-white border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+          <i class="bi bi-justify fs-1 text-warning"></i>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="rooms-packages.html">Rooms & Packages</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap active" href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Right Side Book Button -->
+          <div class="d-none d-lg-block">
+            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Navigation -->
+    <div class="offcanvas offcanvas-end offcanvas-cap" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header p-4 border-bottom border-secondary border-opacity-25">
+        <a class="navbar-brand brand-logo p-0" id="mobileNavLabel" href="index.html">
+          <img src="images/logo.png" alt="Cap Resort Logo" class="logo">
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
+        <ul class="navbar-nav">
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium"
+              href="index.html">Home</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium" href="about.html">About
+              Us</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium"
+              href="rooms-packages.html">Rooms & Packages</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium"
+              href="gallery.html">Gallery</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium active"
+              href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="mt-4">
+          <button class="btn btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Your
+            Stay</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. LUXURY INNER HERO
+         ========================================================================== -->
+    <section class="hero-section text-center text-white position-relative"
+      style="min-height: 60vh; background-image: linear-gradient(180deg, rgba(12, 75, 67, 0.75) 0%, rgba(30, 30, 30, 0.85) 100%), url('images/about-resort.jpg'); padding-top: 160px; padding-bottom: 90px;">
+      <div class="container" data-aos="fade-up">
+        <span class="section-tag text-secondary-custom">24/7 CONCIERGE & DESK</span>
+        <h1 class="display-3 font-heading fw-bold mb-3 text-white">Contact Us</h1>
+        <p class="fs-5 text-white-50 max-w-700 mx-auto mb-4">Plan Your Perfect Escape With Cap Resorts</p>
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="d-inline-block">
+          <ol class="breadcrumb bg-transparent p-0 m-0 text-uppercase tracking-wider small">
+            <li class="breadcrumb-item"><a href="index.html" class="text-secondary-custom text-decoration-none">Home</a>
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">Contact Us</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,50 C650,140 900,10 1200,40 L1200,120 L0,120 Z" fill="#FAFAFA"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. CONTACT INFORMATION SECTION (4 LUXURY GLASS CARDS)
+         ========================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">REACH OUT TO US</span>
+          <h2 class="section-heading">Contact Information</h2>
+          <p class="text-muted">Our dedicated hospitality team is available round-the-clock to assist with reservations,
+            custom itineraries, and retreat enquiries.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1: Address -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm text-center">
+              <div class="why-icon-box mx-auto mb-3" style="width: 60px; height: 60px;">
+                <i class="bi bi-geo-alt-fill fs-3"></i>
+              </div>
+              <h4 class="font-heading text-primary-custom h5 mb-3">Address</h4>
+              <p class="small text-muted mb-0">12/883 First Floor, Khole Complex,<br>NH Nearby Chanakya, Chandranagar
+                Colony,<br>Palakkad, Kerala - 678007, India</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Phone -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm text-center">
+              <div class="why-icon-box mx-auto mb-3" style="width: 60px; height: 60px;">
+                <i class="bi bi-telephone-fill fs-3"></i>
+              </div>
+              <h4 class="font-heading text-primary-custom h5 mb-3">Phone</h4>
+              <p class="small text-muted mb-2"><a href="tel:+919995950900"
+                  class="text-dark fw-semibold text-decoration-none">+91 99959 50900</a></p>
+              <span class="badge bg-success bg-opacity-10 text-success small px-3 py-1">24/7 Concierge Support</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Email -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm text-center">
+              <div class="why-icon-box mx-auto mb-3" style="width: 60px; height: 60px;">
+                <i class="bi bi-envelope-fill fs-3"></i>
+              </div>
+              <h4 class="font-heading text-primary-custom h5 mb-3">Email</h4>
+              <p class="small text-muted mb-2"><a href="mailto:info@capresorts.in"
+                  class="text-dark fw-semibold text-decoration-none">info@capresorts.in</a></p>
+              <span class="small text-muted">Response within 2 hours</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Website -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm text-center">
+              <div class="why-icon-box mx-auto mb-3" style="width: 60px; height: 60px;">
+                <i class="bi bi-globe fs-3"></i>
+              </div>
+              <h4 class="font-heading text-primary-custom h5 mb-3">Website</h4>
+              <p class="small text-muted mb-2"><a href="https://www.capresorts.in" target="_blank" rel="noopener"
+                  class="text-dark fw-semibold text-decoration-none">www.capresorts.in</a></p>
+              <span class="small text-muted">Official Portal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. FORMS SECTION (4. CONTACT ENQUIRY FORM & 5. LUXURY BOOKING FORM)
+         ========================================================================== -->
+    <section class="section-padding bg-accent-custom">
+      <div class="container">
+        <div class="row g-5">
+          <!-- 4. General Contact Enquiry Form -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="bg-white p-5 rounded shadow-sm border border-secondary border-opacity-25 h-100">
+              <span class="section-tag">GENERAL ENQUIRIES</span>
+              <h3 class="font-heading text-primary-custom mb-4">Send An Enquiry</h3>
+              <form class="booking-form row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Your Name</label>
+                  <input type="text" class="form-control py-3" placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Phone Number</label>
+                  <input type="tel" class="form-control py-3" placeholder="+91 99999 00000" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small text-uppercase tracking-wider">Email Address</label>
+                  <input type="email" class="form-control py-3" placeholder="john@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small text-uppercase tracking-wider">Your Message</label>
+                  <textarea class="form-control py-3" rows="4"
+                    placeholder="Ask us about custom packages, dining, corporate summits..." required></textarea>
+                </div>
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-emerald w-100 py-3">Send Enquiry</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- 5. Luxury Booking Enquiry Form -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="glass-card-dark p-5 rounded shadow-lg border border-warning border-opacity-25 text-white h-100">
+              <span class="section-tag text-secondary-custom">INSTANT RESERVATION</span>
+              <h3 class="font-heading text-white mb-4">Book Your Stay</h3>
+              <form class="booking-form row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Full Name</label>
+                  <input type="text" class="form-control bg-dark text-white border-secondary border-opacity-50 py-3"
+                    placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Phone Number</label>
+                  <input type="tel" class="form-control bg-dark text-white border-secondary border-opacity-50 py-3"
+                    placeholder="+91 99999 00000" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Check-in Date</label>
+                  <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50 py-3"
+                    required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Check-out Date</label>
+                  <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50 py-3"
+                    required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Room Type</label>
+                  <select class="form-select bg-dark text-white border-secondary border-opacity-50 py-3">
+                    <option value="deluxe">Deluxe Room ($450 / night)</option>
+                    <option value="premium">Premium Room ($650 / night)</option>
+                    <option value="family-suite">Family Suite ($950 / night)</option>
+                    <option value="cottage">Standalone Cottage ($800 / night)</option>
+                    <option value="villa">Luxury Pool Villa ($1,200 / night)</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-uppercase tracking-wider">Number of Guests</label>
+                  <select class="form-select bg-dark text-white border-secondary border-opacity-50 py-3">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4+">4+ Guests</option>
+                  </select>
+                </div>
+                <div class="col-12 pt-3">
+                  <button type="submit" class="btn btn-gold w-100 py-3 fw-bold">Book Your Stay</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. WHATSAPP & 7. SOCIAL MEDIA SECTION
+         ========================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- 6. WhatsApp Direct Booking Card -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="p-5 rounded shadow-sm text-white"
+              style="background: linear-gradient(135deg, #075E54 0%, #128C7E 100%);">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-whatsapp display-4 text-warning"></i>
+                <div>
+                  <h3 class="font-heading mb-1 text-white">Instant WhatsApp Concierge</h3>
+                  <p class="small text-white-50 mb-0">Direct assistance for room availability, photos, and instant
+                    quotes.</p>
+                </div>
+              </div>
+              <p class="mb-4 text-white-50">Speak directly with our reservation team on WhatsApp for immediate
+                confirmation and custom tour arrangements.</p>
+              <a href="https://wa.me/919995950900" target="_blank" rel="noopener"
+                class="btn btn-warning py-3 px-4 fw-bold">
+                <i class="bi bi-whatsapp me-2"></i> Chat With Us (+91 99959 50900)
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Social Media Connections -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="bg-white p-5 rounded shadow-sm border border-secondary border-opacity-25 text-center">
+              <span class="section-tag">STAY CONNECTED</span>
+              <h3 class="font-heading text-primary-custom mb-3">Follow Cap Resorts</h3>
+              <p class="text-muted mb-4">Discover daily visual stories, retreat highlights, and guest experiences across
+                our channels.</p>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="social-icon bg-light text-dark border p-3 fs-4" aria-label="Instagram"><i
+                    class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon bg-light text-dark border p-3 fs-4" aria-label="Facebook"><i
+                    class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon bg-light text-dark border p-3 fs-4" aria-label="YouTube"><i
+                    class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon bg-light text-dark border p-3 fs-4" aria-label="Pinterest"><i
+                    class="bi bi-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. GOOGLE MAP SECTION
+         ========================================================================== -->
+    <section class="section-padding bg-accent-custom">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-4" data-aos="fade-up">
+          <span class="section-tag">FIND US ON THE MAP</span>
+          <h2 class="section-heading">Our Resort Location</h2>
+          <p class="text-muted">Conveniently situated near Chandranagar Colony, Palakkad, Kerala - surrounded by lush
+            greenery and scenic hills.</p>
+        </div>
+
+        <div class="map-container" data-aos="zoom-in" data-aos-delay="100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.267332997193!2d76.6575!3d10.7867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85d8525b682bf%3A0x868b4ef2dfc399b!2sChandranagar%20Colony%2C%20Palakkad%2C%20Kerala%20678007!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Cap Resorts Location Map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CONTACT CTA
+         ========================================================================== -->
+    <section class="contact-cta-section text-center text-white py-5">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="zoom-in">
+            <span class="section-tag text-secondary-custom">BEGIN YOUR ESCAPE</span>
+            <h2 class="display-4 font-heading fw-bold mb-3 text-white">Escape. Reset. Reconnect.</h2>
+            <p class="fs-5 text-white-50 max-w-650 mx-auto mb-4">Experience unforgettable hospitality with Cap Resorts.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <button class="btn btn-gold py-3 px-5 fs-6 fw-bold" data-bs-toggle="modal"
+                data-bs-target="#bookingModal">Book Now</button>
+              <a href="tel:+919995950900" class="btn btn-outline-gold py-3 px-4 fs-6 fw-bold"><i
+                  class="bi bi-telephone-fill me-2"></i> Call Us: +91 99959 50900</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (CAP RESORTS OFFICIAL FOOTER WITH EXACT CONTACT DETAILS)
+       ========================================================================== -->
+  <footer class="footer-cap">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo footer-logo-only mb-3 p-0 d-inline-block" href="index.html">
+            <img src="images/logo.png" alt="Cap Resort Logo" class="logo footer-logo-img">
+          </a>
+          <p class="small text-white-50 mb-4">Cap Resorts is an award-winning 5-star luxury sanctuary offering exquisite
+            villas, holistic spa wellness, and Michelin-standard dining nestled in pristine natural landscapes.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms-packages.html">Rooms & Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Details -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Details</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span class="small">Cap Resorts<br>12/883 First Floor, Khole Complex,<br>NH Nearby Chanakya, Chandranagar
+              Colony,<br>Palakkad, Kerala - 678007, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="small">+91 99959 50900</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="small">info@capresorts.in</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-globe"></i>
+            <span class="small">www.capresorts.in</span>
+          </div>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Newsletter</h5>
+          <p class="small text-white-50 mb-3">Subscribe to receive exclusive retreat offers, seasonal packages, and
+            private invitations.</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email..." required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom text-center">
+        <p class="mb-0 text-white-50">&copy; 2026 Cap Resorts. All Rights Reserved. Designed with Luxury & Precision.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card-dark text-white p-4">
+        <div class="modal-header border-bottom border-secondary border-opacity-25 pb-3">
+          <h5 class="modal-title font-heading fs-3 text-secondary-custom" id="bookingModalLabel"><i
+              class="bi bi-gem me-2"></i> Reserve Your Stay at Cap Resorts</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <form class="booking-form row g-3">
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Full Name</label>
+              <input type="text" class="form-control bg-dark text-white border-secondary border-opacity-50"
+                placeholder="John Doe" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Phone Number</label>
+              <input type="tel" class="form-control bg-dark text-white border-secondary border-opacity-50"
+                placeholder="+91 99959 50900" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Accommodation Type</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50">
+                <option value="deluxe">Deluxe Room ($450 / night)</option>
+                <option value="premium">Premium Room ($650 / night)</option>
+                <option value="family-suite">Family Suite ($950 / night)</option>
+                <option value="cottage">Standalone Cottage ($800 / night)</option>
+                <option value="villa">Luxury Pool Villa ($1,200 / night)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Guests</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4+">4+ Guests</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Check-in Date</label>
+              <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Check-out Date</label>
+              <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label small text-uppercase tracking-wider">Special Requests / Preferences</label>
+              <textarea class="form-control bg-dark text-white border-secondary border-opacity-50" rows="3"
+                placeholder="Airport transfer, dietary requests, spa arrangements..."></textarea>
+            </div>
+            <div class="col-12 mt-4 text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-gold py-2 px-4">Confirm Reservation Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+- [Home](http://127.0.0.1:8080/index.html)
+- [About Us](http://127.0.0.1:8080/about.html)
+- [Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+- [Gallery](http://127.0.0.1:8080/gallery.html)
+- [Contact Us](http://127.0.0.1:8080/contact.html)
+[Home](http://127.0.0.1:8080/index.html)
+[About Us](http://127.0.0.1:8080/about.html)
+[Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+[Gallery](http://127.0.0.1:8080/gallery.html)
+[Contact Us](http://127.0.0.1:8080/contact.html)
+- [Home](http://127.0.0.1:8080/index.html)
+- [About
+              Us](http://127.0.0.1:8080/about.html)
+- [Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+- [Gallery](http://127.0.0.1:8080/gallery.html)
+- [Contact Us](http://127.0.0.1:8080/contact.html)
+[Home](http://127.0.0.1:8080/index.html)
+[About
+              Us](http://127.0.0.1:8080/about.html)
+[Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+[Gallery](http://127.0.0.1:8080/gallery.html)
+[Contact Us](http://127.0.0.1:8080/contact.html)
+
+# Experience Luxury Surrounded by Nature
+
+Escape into breathtaking landscapes, elegant accommodations, and unforgettable 5-star hospitality in our sanctuary of calm.
+[Explore Rooms](http://127.0.0.1:8080/rooms-packages.html)
+
+## Where Luxury Meets Nature
+Designed for discerning travelers seeking serenity, elegance, and sanctuary.
+Cap Resorts combines timeless architectural aesthetics with pristine ecological environments. Nestled between verdant hilltops and crystal turquoise waters, we curate bespoke luxury experiences that harmonize modern elegance with untouched natural beauty.
+
+##### Premium Hospitality
+Dedicated 24/7 personal butler service for every guest.
+
+##### Eco Friendly
+100% sustainable energy and zero plastic sanctuary.
+
+##### Luxury Stay
+Private plunge pools & floor-to-ceiling panoramic views.
+
+##### Fine Dining
+Michelin-standard culinary creations by organic chefs.
+[Read More](http://127.0.0.1:8080/about.html)
+
+## Why Choose Cap Resorts
+Discover the signature amenities and world-class offerings that set Cap Resorts apart as an icon of global hospitality.
+
+#### Luxury Accommodation
+Meticulously designed private suites & overwater villas crafted with natural stone & teakwood.
+
+#### 24x7 Hospitality
+Round-the-clock personal concierge, room service, and private yacht transfers at your command.
+
+#### Scenic Location
+Situated in an exclusive, secluded coastal bay framed by virgin rainforest and coral reefs.
+
+#### Infinity Pool
+Temperature-controlled cliffside pool seamlessly blending into the horizon of the azure ocean.
+
+#### Adventure Activities
+Helicopter tours, private deep-sea scuba expeditions, and sunset catamaran cruises.
+
+#### Fine Restaurant
+Four world-class restaurants showcasing Asian fusion, Mediterranean grill, and wine cellars.
+
+#### Spa & Wellness
+Holistic Ayurvedic treatments, sound bath therapy, and outdoor yoga pavilions on the ocean sound.
+
+#### Conference Hall
+State-of-the-art oceanfront executive summits and private event space for global leaders.
+
+## Featured Luxury Rooms
+Unwind in opulence with private sanctuaries engineered for supreme tranquility and panoramic natural vistas.
+
+### Luxury Suite
+Expansive suite with king bed, marble bathroom, and ocean view balcony.
+
+### Pool Villa
+Standalone villa featuring private infinity plunge pool and sun terrace.
+
+### Family Cottage
+Two-bedroom timber pavilion surrounded by tropical lush gardens.
+
+### Executive Room
+Sleek penthouse studio with outdoor jacuzzi and mountain sunrise view.
+[View All Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+
+## Resort Facilities
+Immerse yourself in world-class amenities designed to rejuvenate mind, body, and spirit.
+
+##### Swimming Pool
+Cliffside infinity
+
+##### Restaurant
+Organic Michelin dining
+
+##### Spa & Wellness
+Ayurvedic therapy
+
+##### Gym & Fitness
+Technogym studio
+
+##### Beach Bonfire
+Nightly stargazing
+
+##### Kids Zone
+Supervised play
+
+##### Conference Hall
+VIP Executive board
+
+##### Free Ultra WiFi
+High-speed fiber
+
+##### Private Parking
+Valet & EV charging
+
+##### Travel Desk
+Yacht & chopper tour
+
+## Special Resort Packages
+Curated getaway experiences designed to make every milestone stay unforgettable.
+
+### Weekend Escape
+-  2 Nights in Luxury Suite
+-  Daily Gourmet Breakfast
+-  60-min Couple Spa Therapy
+-  Complimentary Airport Transfer
+-  Sunset Cocktail Hour
+
+### Honeymoon Package
+-  4 Nights Private Pool Villa
+-  Candlelit Beachfront Dinner
+-  Private Yacht Sunset Cruise
+-  Unlimited Spa Sanctuary Access
+-  Champagne & Flowers on Arrival
+-  24/7 Dedicated Butler
+
+### Family Holiday
+-  3 Nights Family Cottage
+-  All-Inclusive Dining Package
+-  Kids Club & Guided Nature Walk
+-  Private Beach Bonfire Evening
+-  Water Sports & Scuba Trial
+
+## Resort Gallery
+Take a glimpse into the serene beauty, fine craftsmanship, and vibrant life at Cap Resorts.
+
+#### Cliffside Infinity Pool
+
+#### Candlelit Beach Dining
+
+#### Holistic Spa Pavilion
+
+#### Overwater Boardwalk
+[View Full Gallery](http://127.0.0.1:8080/gallery.html)
+
+## Words From Our Guests
+Read verified experiences from our esteemed travelers who have made Cap Resorts their home away from home.
+"Cap Resorts surpassed every expectation we had for our anniversary trip. The attention to detail in the Pool Villa, the private beach dining, and the warmth of the butler team made it the most peaceful week of our lives."
+
+##### Lady Victoria Sterling
+"An absolute paradise! As someone who travels constantly for business, Cap Resorts provided a level of tranquility and culinary excellence that equals Aman and Six Senses. The infinity pool at dusk is pure magic."
+
+##### Marcus Vance
+"The Honeymoon Package was divine. From the champagne welcome to the private sunset yacht tour, every moment was orchestrated flawlessly. We are already planning our return next year!"
+
+##### Sophia & Alexander Chen
+
+## Ready for Your Dream Vacation?
+Reserve your luxury suite or villa today and step into an oasis where serenity, nature, and five-star elegance meet.
+[Contact Us](http://127.0.0.1:8080/contact.html)
+Cap Resorts is an award-winning 5-star luxury sanctuary offering exquisite villas, holistic spa wellness, and Michelin-standard dining nestled in pristine natural landscapes.
+
+##### Quick Links
+- [Home](http://127.0.0.1:8080/index.html)
+- [About Us](http://127.0.0.1:8080/about.html)
+- [Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+- [Gallery](http://127.0.0.1:8080/gallery.html)
+- [Contact Us](http://127.0.0.1:8080/contact.html)
+[Home](http://127.0.0.1:8080/index.html)
+[About Us](http://127.0.0.1:8080/about.html)
+[Rooms & Packages](http://127.0.0.1:8080/rooms-packages.html)
+[Gallery](http://127.0.0.1:8080/gallery.html)
+[Contact Us](http://127.0.0.1:8080/contact.html)
+
+##### Contact Details
+
+##### Newsletter
+Subscribe to receive exclusive retreat offers, seasonal packages, and private invitations.
+© 2026 Cap Resorts. All Rights Reserved. Designed with Luxury & Precision.
+
+##### Reserve Your Stay at Cap Resorts

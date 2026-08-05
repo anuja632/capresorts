@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cap Resorts | 5-Star Premium Luxury Resort & Spa</title>
+  <meta name="description"
+    content="Experience 5-star luxury surrounded by nature at Cap Resorts. Breathtaking ocean view villas, world-class dining, holistic spa, and unforgettable hospitality.">
+  <meta name="keywords"
+    content="Cap Resorts, luxury resort, 5 star hotel, ocean villas, spa sanctuary, fine dining, private pool villa, luxury stay">
+  <meta name="author" content="Cap Resorts">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Cap Resorts | 5-Star Premium Luxury Resort">
+  <meta property="og:description"
+    content="Escape into breathtaking landscapes, elegant accommodations, and unforgettable 5-star hospitality at Cap Resorts.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts: Playfair Display & Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+  <!-- ==========================================================================
+       1. TRANSPARENT STICKY HEADER
+       ========================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-cap" id="mainNavbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand brand-logo p-0" href="index.html">
+          <img src="images/logo.png" alt="Cap Resort Logo" class="logo">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler text-white border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+          <i class="bi bi-justify fs-1 text-warning"></i>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link nav-link-cap active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="rooms-packages.html">Rooms & Packages</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Right Side Book Button -->
+          <div class="d-none d-lg-block">
+            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Navigation -->
+    <div class="offcanvas offcanvas-end offcanvas-cap" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header p-4 border-bottom border-secondary border-opacity-25">
+        <a class="navbar-brand brand-logo p-0" id="mobileNavLabel" href="index.html">
+          <img src="images/logo.png" alt="Cap Resort Logo" class="logo">
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
+        <ul class="navbar-nav">
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium active"
+              href="index.html">Home</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium" href="about.html">About
+              Us</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium"
+              href="rooms-packages.html">Rooms & Packages</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium"
+              href="gallery.html">Gallery</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium"
+              href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="mt-4">
+          <button class="btn btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Your
+            Stay</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO BANNER
+         ========================================================================== -->
+    <section id="hero" class="hero-section text-center text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="hero-subtitle mb-3">WELCOME TO CAP RESORTS</div>
+            <h1 class="hero-title mb-4">Experience Luxury Surrounded by Nature</h1>
+            <p class="hero-desc mb-5">Escape into breathtaking landscapes, elegant accommodations, and unforgettable
+              5-star hospitality in our sanctuary of calm.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              <a href="rooms-packages.html" class="btn btn-outline-gold">Explore Rooms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Scroll Indicator -->
+      <div class="hero-scroll-indicator">
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+
+      <!-- Animated Waves Divider -->
+      <div class="hero-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,50 C650,140 900,10 1200,40 L1200,120 L0,120 Z" fill="#FAFAFA"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ABOUT CAP RESORTS
+         ========================================================================== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Left: Image Column -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-img-box me-lg-4">
+              <img src="images/about-resort.jpg" alt="Cap Resorts Architecture" class="img-fluid about-img-main"
+                loading="lazy">
+              <!-- Floating Card -->
+              <div class="about-experience-badge" data-aos="zoom-in" data-aos-delay="200">
+                <div class="years"><span class="counter-val" data-target="25">0</span>+</div>
+                <div class="label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text Column -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <span class="section-tag">ABOUT US</span>
+            <h2 class="section-heading">Where Luxury Meets Nature</h2>
+            <p class="text-secondary-custom fw-medium mb-3 fs-5">Designed for discerning travelers seeking serenity,
+              elegance, and sanctuary.</p>
+            <p class="text-muted mb-4">Cap Resorts combines timeless architectural aesthetics with pristine ecological
+              environments. Nestled between verdant hilltops and crystal turquoise waters, we curate bespoke luxury
+              experiences that harmonize modern elegance with untouched natural beauty.</p>
+
+            <!-- Feature Cards Grid -->
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-mini-card">
+                  <i class="bi bi-award-fill"></i>
+                  <h5 class="font-heading mb-1 text-primary-custom">Premium Hospitality</h5>
+                  <p class="small text-muted mb-0">Dedicated 24/7 personal butler service for every guest.</p>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-mini-card">
+                  <i class="bi bi-tree-fill"></i>
+                  <h5 class="font-heading mb-1 text-primary-custom">Eco Friendly</h5>
+                  <p class="small text-muted mb-0">100% sustainable energy and zero plastic sanctuary.</p>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-mini-card">
+                  <i class="bi bi-house-heart-fill"></i>
+                  <h5 class="font-heading mb-1 text-primary-custom">Luxury Stay</h5>
+                  <p class="small text-muted mb-0">Private plunge pools & floor-to-ceiling panoramic views.</p>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-mini-card">
+                  <i class="bi bi-cup-hot-fill"></i>
+                  <h5 class="font-heading mb-1 text-primary-custom">Fine Dining</h5>
+                  <p class="small text-muted mb-0">Michelin-standard culinary creations by organic chefs.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-emerald">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. WHY CHOOSE US
+         ========================================================================== -->
+    <section id="why-us" class="section-padding bg-accent-custom">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">EXCELLENCE DEFINED</span>
+          <h2 class="section-heading">Why Choose Cap Resorts</h2>
+          <p class="text-muted">Discover the signature amenities and world-class offerings that set Cap Resorts apart as
+            an icon of global hospitality.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <h4>Luxury Accommodation</h4>
+              <p>Meticulously designed private suites & overwater villas crafted with natural stone & teakwood.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <h4>24x7 Hospitality</h4>
+              <p>Round-the-clock personal concierge, room service, and private yacht transfers at your command.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h4>Scenic Location</h4>
+              <p>Situated in an exclusive, secluded coastal bay framed by virgin rainforest and coral reefs.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-water"></i>
+              </div>
+              <h4>Infinity Pool</h4>
+              <p>Temperature-controlled cliffside pool seamlessly blending into the horizon of the azure ocean.</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-compass"></i>
+              </div>
+              <h4>Adventure Activities</h4>
+              <p>Helicopter tours, private deep-sea scuba expeditions, and sunset catamaran cruises.</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-egg-fried"></i>
+              </div>
+              <h4>Fine Restaurant</h4>
+              <p>Four world-class restaurants showcasing Asian fusion, Mediterranean grill, and wine cellars.</p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h4>Spa & Wellness</h4>
+              <p>Holistic Ayurvedic treatments, sound bath therapy, and outdoor yoga pavilions on the ocean sound.</p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-building font-heading"></i>
+              </div>
+              <h4>Conference Hall</h4>
+              <p>State-of-the-art oceanfront executive summits and private event space for global leaders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. FEATURED ROOMS
+         ========================================================================== -->
+    <section id="rooms" class="section-padding">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">ACCOMMODATIONS</span>
+          <h2 class="section-heading">Featured Luxury Rooms</h2>
+          <p class="text-muted">Unwind in opulence with private sanctuaries engineered for supreme tranquility and
+            panoramic natural vistas.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Room 1: Luxury Suite -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-suite.jpg" alt="Luxury Suite" class="room-img" loading="lazy">
+                <div class="room-badge">Featured</div>
+                <div class="room-price-tag">$650 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Luxury Suite</h3>
+                <div class="room-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(5.0)</span>
+                </div>
+                <p class="small text-muted mb-3">Expansive suite with king bed, marble bathroom, and ocean view balcony.
+                </p>
+                <div class="room-features">
+                  <span><i class="bi bi-bounding-box-circles"></i> 85 m²</span>
+                  <span><i class="bi bi-people"></i> 2 Guests</span>
+                  <span><i class="bi bi-wifi"></i> Free</span>
+                  <span><i class="bi bi-cup-hot"></i> Incl.</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                  Room</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 2: Pool Villa -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-villa.jpg" alt="Pool Villa" class="room-img" loading="lazy">
+                <div class="room-badge">Best Seller</div>
+                <div class="room-price-tag">$1,200 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Pool Villa</h3>
+                <div class="room-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(5.0)</span>
+                </div>
+                <p class="small text-muted mb-3">Standalone villa featuring private infinity plunge pool and sun
+                  terrace.</p>
+                <div class="room-features">
+                  <span><i class="bi bi-bounding-box-circles"></i> 140 m²</span>
+                  <span><i class="bi bi-people"></i> 3 Guests</span>
+                  <span><i class="bi bi-wifi"></i> Free</span>
+                  <span><i class="bi bi-cup-hot"></i> Incl.</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                  Room</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 3: Family Cottage -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-cottage.jpg" alt="Family Cottage" class="room-img" loading="lazy">
+                <div class="room-price-tag">$950 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Family Cottage</h3>
+                <div class="room-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(4.9)</span>
+                </div>
+                <p class="small text-muted mb-3">Two-bedroom timber pavilion surrounded by tropical lush gardens.</p>
+                <div class="room-features">
+                  <span><i class="bi bi-bounding-box-circles"></i> 180 m²</span>
+                  <span><i class="bi bi-people"></i> 5 Guests</span>
+                  <span><i class="bi bi-wifi"></i> Free</span>
+                  <span><i class="bi bi-cup-hot"></i> Incl.</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                  Room</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 4: Executive Room -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-executive.jpg" alt="Executive Room" class="room-img" loading="lazy">
+                <div class="room-price-tag">$800 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Executive Room</h3>
+                <div class="room-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(4.9)</span>
+                </div>
+                <p class="small text-muted mb-3">Sleek penthouse studio with outdoor jacuzzi and mountain sunrise view.
+                </p>
+                <div class="room-features">
+                  <span><i class="bi bi-bounding-box-circles"></i> 110 m²</span>
+                  <span><i class="bi bi-people"></i> 2 Guests</span>
+                  <span><i class="bi bi-wifi"></i> Free</span>
+                  <span><i class="bi bi-cup-hot"></i> Incl.</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                  Room</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="rooms-packages.html" class="btn btn-outline-gold py-3 px-4">View All Rooms & Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. RESORT FACILITIES
+         ========================================================================== -->
+    <section id="facilities" class="section-padding bg-accent-custom">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">AMENITIES</span>
+          <h2 class="section-heading">Resort Facilities</h2>
+          <p class="text-muted">Immerse yourself in world-class amenities designed to rejuvenate mind, body, and spirit.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Facility 1 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-water"></i></div>
+              <h5>Swimming Pool</h5>
+              <p>Cliffside infinity</p>
+            </div>
+          </div>
+          <!-- Facility 2 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-cup-hot"></i></div>
+              <h5>Restaurant</h5>
+              <p>Organic Michelin dining</p>
+            </div>
+          </div>
+          <!-- Facility 3 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-flower1"></i></div>
+              <h5>Spa & Wellness</h5>
+              <p>Ayurvedic therapy</p>
+            </div>
+          </div>
+          <!-- Facility 4 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-heart-pulse"></i></div>
+              <h5>Gym & Fitness</h5>
+              <p>Technogym studio</p>
+            </div>
+          </div>
+          <!-- Facility 5 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-fire"></i></div>
+              <h5>Beach Bonfire</h5>
+              <p>Nightly stargazing</p>
+            </div>
+          </div>
+
+          <!-- Facility 6 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-controller"></i></div>
+              <h5>Kids Zone</h5>
+              <p>Supervised play</p>
+            </div>
+          </div>
+          <!-- Facility 7 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-briefcase"></i></div>
+              <h5>Conference Hall</h5>
+              <p>VIP Executive board</p>
+            </div>
+          </div>
+          <!-- Facility 8 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="450">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-wifi"></i></div>
+              <h5>Free Ultra WiFi</h5>
+              <p>High-speed fiber</p>
+            </div>
+          </div>
+          <!-- Facility 9 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-p-circle"></i></div>
+              <h5>Private Parking</h5>
+              <p>Valet & EV charging</p>
+            </div>
+          </div>
+          <!-- Facility 10 -->
+          <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="550">
+            <div class="facility-card">
+              <div class="facility-icon"><i class="bi bi-airplane"></i></div>
+              <h5>Travel Desk</h5>
+              <p>Yacht & chopper tour</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. SPECIAL PACKAGES
+         ========================================================================== -->
+    <section id="packages" class="section-padding">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">EXCLUSIVE EXPERIENCES</span>
+          <h2 class="section-heading">Special Resort Packages</h2>
+          <p class="text-muted">Curated getaway experiences designed to make every milestone stay unforgettable.</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <!-- Package 1: Weekend Escape -->
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="package-card">
+              <h3>Weekend Escape</h3>
+              <div class="package-price">$1,450 <span>/ 3 Days</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> 2 Nights in Luxury Suite</li>
+                <li><i class="bi bi-check-circle-fill"></i> Daily Gourmet Breakfast</li>
+                <li><i class="bi bi-check-circle-fill"></i> 60-min Couple Spa Therapy</li>
+                <li><i class="bi bi-check-circle-fill"></i> Complimentary Airport Transfer</li>
+                <li><i class="bi bi-check-circle-fill"></i> Sunset Cocktail Hour</li>
+              </ul>
+              <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                Package</button>
+            </div>
+          </div>
+
+          <!-- Package 2: Honeymoon Package (Featured) -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="package-card featured">
+              <div class="package-ribbon">Most Popular</div>
+              <h3>Honeymoon Package</h3>
+              <div class="package-price">$3,800 <span>/ 5 Days</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> 4 Nights Private Pool Villa</li>
+                <li><i class="bi bi-check-circle-fill"></i> Candlelit Beachfront Dinner</li>
+                <li><i class="bi bi-check-circle-fill"></i> Private Yacht Sunset Cruise</li>
+                <li><i class="bi bi-check-circle-fill"></i> Unlimited Spa Sanctuary Access</li>
+                <li><i class="bi bi-check-circle-fill"></i> Champagne & Flowers on Arrival</li>
+                <li><i class="bi bi-check-circle-fill"></i> 24/7 Dedicated Butler</li>
+              </ul>
+              <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                Package</button>
+            </div>
+          </div>
+
+          <!-- Package 3: Family Holiday -->
+          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="300">
+            <div class="package-card">
+              <h3>Family Holiday</h3>
+              <div class="package-price">$2,900 <span>/ 4 Days</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> 3 Nights Family Cottage</li>
+                <li><i class="bi bi-check-circle-fill"></i> All-Inclusive Dining Package</li>
+                <li><i class="bi bi-check-circle-fill"></i> Kids Club & Guided Nature Walk</li>
+                <li><i class="bi bi-check-circle-fill"></i> Private Beach Bonfire Evening</li>
+                <li><i class="bi bi-check-circle-fill"></i> Water Sports & Scuba Trial</li>
+              </ul>
+              <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                Package</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. GALLERY PREVIEW
+         ========================================================================== -->
+    <section id="gallery" class="section-padding bg-accent-custom">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">VISUAL JOURNEY</span>
+          <h2 class="section-heading">Resort Gallery</h2>
+          <p class="text-muted">Take a glimpse into the serene beauty, fine craftsmanship, and vibrant life at Cap
+            Resorts.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Image 1 -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-item">
+              <img src="images/gallery-1.jpg" alt="Infinity Pool Sunset" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Cliffside Infinity Pool</h4>
+                <span class="gallery-cat">Architecture</span>
+              </div>
+            </div>
+          </div>
+          <!-- Image 2 -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+            <div class="gallery-item">
+              <img src="images/gallery-2.jpg" alt="Beachfront Fine Dining" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Candlelit Beach Dining</h4>
+                <span class="gallery-cat">Culinary</span>
+              </div>
+            </div>
+          </div>
+          <!-- Image 3 -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-item">
+              <img src="images/gallery-3.jpg" alt="Spa Sanctuary Room" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Holistic Spa Pavilion</h4>
+                <span class="gallery-cat">Wellness</span>
+              </div>
+            </div>
+          </div>
+          <!-- Image 4 -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
+            <div class="gallery-item">
+              <img src="images/gallery-4.jpg" alt="Overwater Boardwalk" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Overwater Boardwalk</h4>
+                <span class="gallery-cat">Landscape</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="gallery.html" class="btn btn-emerald py-3 px-4">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. TESTIMONIALS
+         ========================================================================== -->
+    <section id="testimonials" class="section-padding bg-primary-custom text-white position-relative">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag text-secondary-custom">GUEST REVIEWS</span>
+          <h2 class="section-heading text-white">Words From Our Guests</h2>
+          <p class="text-white-50">Read verified experiences from our esteemed travelers who have made Cap Resorts their
+            home away from home.</p>
+        </div>
+
+        <div id="testimonialsCarousel" class="carousel slide testimonials-carousel" data-bs-ride="carousel"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="glass-card-dark testimonial-card text-center">
+                    <i class="bi bi-quote quote-icon"></i>
+                    <div class="text-warning mb-3 fs-5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">"Cap Resorts surpassed every expectation we had for our anniversary
+                      trip. The attention to detail in the Pool Villa, the private beach dining, and the warmth of the
+                      butler team made it the most peaceful week of our lives."</p>
+                    <div class="testimonial-author justify-content-center">
+                      <div>
+                        <h5 class="author-name mb-0">Lady Victoria Sterling</h5>
+                        <span class="author-role">London, United Kingdom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="glass-card-dark testimonial-card text-center">
+                    <i class="bi bi-quote quote-icon"></i>
+                    <div class="text-warning mb-3 fs-5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">"An absolute paradise! As someone who travels constantly for business,
+                      Cap Resorts provided a level of tranquility and culinary excellence that equals Aman and Six
+                      Senses. The infinity pool at dusk is pure magic."</p>
+                    <div class="testimonial-author justify-content-center">
+                      <div>
+                        <h5 class="author-name mb-0">Marcus Vance</h5>
+                        <span class="author-role">Zurich, Switzerland</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="glass-card-dark testimonial-card text-center">
+                    <i class="bi bi-quote quote-icon"></i>
+                    <div class="text-warning mb-3 fs-5">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">"The Honeymoon Package was divine. From the champagne welcome to the
+                      private sunset yacht tour, every moment was orchestrated flawlessly. We are already planning our
+                      return next year!"</p>
+                    <div class="testimonial-author justify-content-center">
+                      <div>
+                        <h5 class="author-name mb-0">Sophia & Alexander Chen</h5>
+                        <span class="author-role">Singapore</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators position-relative mt-4 mb-0">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACT CTA
+         ========================================================================== -->
+    <section id="contact" class="contact-cta-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="zoom-in">
+            <span class="section-tag">BEGIN YOUR ESCAPE</span>
+            <h2 class="cta-title">Ready for Your Dream Vacation?</h2>
+            <p class="cta-desc">Reserve your luxury suite or villa today and step into an oasis where serenity, nature,
+              and five-star elegance meet.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <button class="btn btn-gold py-3 px-5" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                Now</button>
+              <a href="contact.html" class="btn btn-outline-gold py-3 px-4"><i class="bi bi-telephone-fill me-2"></i>
+                Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       11. FOOTER (UNIFIED CAP RESORTS FOOTER)
+       ========================================================================== -->
+  <footer class="footer-cap">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo footer-logo-only mb-3 p-0 d-inline-block" href="index.html">
+            <img src="images/logo.png" alt="Cap Resort Logo" class="logo footer-logo-img">
+          </a>
+          <p class="small text-white-50 mb-4">Cap Resorts is an award-winning 5-star luxury sanctuary offering exquisite
+            villas, holistic spa wellness, and Michelin-standard dining nestled in pristine natural landscapes.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms-packages.html">Rooms & Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Details -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Details</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span class="small">Cap Resorts<br>12/883 First Floor, Khole Complex,<br>NH Nearby Chanakya, Chandranagar
+              Colony,<br>Palakkad, Kerala - 678007, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="small">+91 99959 50900</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="small">info@capresorts.in</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-globe"></i>
+            <span class="small">www.capresorts.in</span>
+          </div>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Newsletter</h5>
+          <p class="small text-white-50 mb-3">Subscribe to receive exclusive retreat offers, seasonal packages, and
+            private invitations.</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email..." required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom text-center">
+        <p class="mb-0 text-white-50">&copy; 2026 Cap Resorts. All Rights Reserved. Designed with Luxury & Precision.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card-dark text-white p-4">
+        <div class="modal-header border-bottom border-secondary border-opacity-25 pb-3">
+          <h5 class="modal-title font-heading fs-3 text-secondary-custom" id="bookingModalLabel"><i
+              class="bi bi-gem me-2"></i> Reserve Your Stay at Cap Resorts</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <form class="booking-form row g-3">
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Full Name</label>
+              <input type="text" class="form-control bg-dark text-white border-secondary border-opacity-50"
+                placeholder="John Doe" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Phone Number</label>
+              <input type="tel" class="form-control bg-dark text-white border-secondary border-opacity-50"
+                placeholder="+91 99959 50900" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Accommodation Type</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50">
+                <option value="suite">Luxury Suite ($650 / night)</option>
+                <option value="villa">Pool Villa ($1,200 / night)</option>
+                <option value="cottage">Family Cottage ($950 / night)</option>
+                <option value="executive">Executive Room ($800 / night)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Guests</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4+">4+ Guests</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Check-in Date</label>
+              <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Check-out Date</label>
+              <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label small text-uppercase tracking-wider">Special Requests / Preferences</label>
+              <textarea class="form-control bg-dark text-white border-secondary border-opacity-50" rows="3"
+                placeholder="Airport transfer, dietary requests, spa arrangements..."></textarea>
+            </div>
+            <div class="col-12 mt-4 text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-gold py-2 px-4">Confirm Reservation Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

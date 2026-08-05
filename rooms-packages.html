@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms & Packages | Cap Resorts Luxury Stays</title>
+  <meta name="description" content="Explore luxury rooms, ocean villas, and exclusive getaway packages at Cap Resorts. Designed for unforgettable experiences in nature.">
+  <meta name="keywords" content="Cap Resorts Rooms, Luxury Villa, Deluxe Room, Family Suite, Couple Package, Corporate Package, Resort Packages">
+  <meta name="author" content="Cap Resorts">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Rooms & Packages | Cap Resorts">
+  <meta property="og:description" content="Luxury Stays Designed For Unforgettable Experiences at Cap Resorts. Deluxe Rooms, Family Suites, Pool Villas, and curated getaway packages.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts: Playfair Display & Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+  <!-- ==========================================================================
+       1. TRANSPARENT STICKY HEADER
+       ========================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-cap" id="mainNavbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand brand-logo p-0" href="index.html">
+          <img src="images/logo.png" alt="Cap Resort Logo" class="logo">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler text-white border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+          <i class="bi bi-justify fs-1 text-warning"></i>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="index.html#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap active" href="rooms-packages.html">Rooms & Packages</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="index.html#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-cap" href="index.html#contact">Contact Us</a></li>
+          </ul>
+
+          <!-- Right Side Book Button -->
+          <div class="d-none d-lg-block">
+            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Navigation -->
+    <div class="offcanvas offcanvas-end offcanvas-cap" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header p-4 border-bottom border-secondary border-opacity-25">
+        <a class="navbar-brand brand-logo p-0" id="mobileNavLabel" href="index.html">
+          <img src="images/logo.png" alt="Cap Resort Logo" class="logo">
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
+        <ul class="navbar-nav">
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium" href="index.html#hero">Home</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium" href="about.html">About Us</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium active" href="rooms-packages.html">Rooms & Packages</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium" href="index.html#gallery">Gallery</a></li>
+          <li class="nav-item mb-2"><a class="nav-link text-white fs-5 text-uppercase fw-medium" href="index.html#contact">Contact Us</a></li>
+        </ul>
+        <div class="mt-4">
+          <button class="btn btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Your Stay</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. LUXURY INNER HERO
+         ========================================================================== -->
+    <section class="hero-section text-center text-white position-relative" style="min-height: 60vh; background-image: linear-gradient(180deg, rgba(12, 75, 67, 0.75) 0%, rgba(30, 30, 30, 0.85) 100%), url('images/room-suite.jpg'); padding-top: 160px; padding-bottom: 90px;">
+      <div class="container" data-aos="fade-up">
+        <span class="section-tag text-secondary-custom">ACCOMMODATIONS & OFFERS</span>
+        <h1 class="display-3 font-heading fw-bold mb-3 text-white">Rooms & Packages</h1>
+        <p class="fs-5 text-white-50 max-w-700 mx-auto mb-4">Luxury Stays Designed For Unforgettable Experiences</p>
+        
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="d-inline-block">
+          <ol class="breadcrumb bg-transparent p-0 m-0 text-uppercase tracking-wider small">
+            <li class="breadcrumb-item"><a href="index.html" class="text-secondary-custom text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">Rooms & Packages</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,50 C650,140 900,10 1200,40 L1200,120 L0,120 Z" fill="#FAFAFA"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. ROOMS SECTION (5 PREMIUM ROOM CARDS)
+         ========================================================================== -->
+    <section id="rooms-list" class="section-padding">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">BESPOKE SANCTUARIES</span>
+          <h2 class="section-heading">Our Luxury Accommodations</h2>
+          <p class="text-muted">Choose from our curated collection of elegant rooms, timber pavilions, and private plunge pool villas.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Room 1: Deluxe Room -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-executive.jpg" alt="Deluxe Room" class="room-img" loading="lazy">
+                <div class="room-badge">Popular</div>
+                <div class="room-price-tag">$450 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Deluxe Room</h3>
+                <div class="room-rating mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(4.9)</span>
+                </div>
+                <p class="small text-muted mb-3">Refined garden view room featuring a king bed, warm timber accents, and private terrace.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-wifi text-warning me-1"></i> Free WiFi</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-cup-hot text-warning me-1"></i> Breakfast</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-tree text-warning me-1"></i> Nature View</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-snow text-warning me-1"></i> Air Conditioning</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-droplet text-warning me-1"></i> Luxury Bathroom</span>
+                </div>
+                <div class="room-features border-top pt-2 mt-auto">
+                  <span><i class="bi bi-people"></i> 2 Guests</span>
+                  <span><i class="bi bi-bounding-box-circles"></i> 60 m²</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 2: Premium Room -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-suite.jpg" alt="Premium Room" class="room-img" loading="lazy">
+                <div class="room-badge">Featured</div>
+                <div class="room-price-tag">$650 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Premium Room</h3>
+                <div class="room-rating mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(5.0)</span>
+                </div>
+                <p class="small text-muted mb-3">Spacious penthouse suite offering breathtaking ocean views, Italian marble bath, and butler service.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-wifi text-warning me-1"></i> Free WiFi</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-cup-hot text-warning me-1"></i> Breakfast</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-water text-warning me-1"></i> Ocean View</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-snow text-warning me-1"></i> Air Conditioning</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-droplet text-warning me-1"></i> Luxury Bathroom</span>
+                </div>
+                <div class="room-features border-top pt-2 mt-auto">
+                  <span><i class="bi bi-people"></i> 2 Guests</span>
+                  <span><i class="bi bi-bounding-box-circles"></i> 85 m²</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 3: Family Suite -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-cottage.jpg" alt="Family Suite" class="room-img" loading="lazy">
+                <div class="room-price-tag">$950 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Family Suite</h3>
+                <div class="room-rating mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(4.9)</span>
+                </div>
+                <p class="small text-muted mb-3">Two-bedroom family suite with living lounge, private dining, and garden veranda for all ages.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-wifi text-warning me-1"></i> Free WiFi</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-cup-hot text-warning me-1"></i> Breakfast</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-tree text-warning me-1"></i> Garden View</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-snow text-warning me-1"></i> Air Conditioning</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-droplet text-warning me-1"></i> Luxury Bathroom</span>
+                </div>
+                <div class="room-features border-top pt-2 mt-auto">
+                  <span><i class="bi bi-people"></i> 4 Guests</span>
+                  <span><i class="bi bi-bounding-box-circles"></i> 130 m²</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 4: Cottage -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/about-resort.jpg" alt="Cottage" class="room-img" loading="lazy">
+                <div class="room-badge">Nature Retreat</div>
+                <div class="room-price-tag">$800 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Standalone Cottage</h3>
+                <div class="room-rating mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(4.9)</span>
+                </div>
+                <p class="small text-muted mb-3">Independent timber pavilion crafted with stone walls, outdoor rainfall shower, and panoramic forest views.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-wifi text-warning me-1"></i> Free WiFi</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-cup-hot text-warning me-1"></i> Breakfast</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-tree text-warning me-1"></i> Mountain View</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-snow text-warning me-1"></i> Air Conditioning</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-droplet text-warning me-1"></i> Luxury Bathroom</span>
+                </div>
+                <div class="room-features border-top pt-2 mt-auto">
+                  <span><i class="bi bi-people"></i> 3 Guests</span>
+                  <span><i class="bi bi-bounding-box-circles"></i> 110 m²</span>
+                </div>
+                <button class="btn btn-emerald w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 5: Luxury Villa -->
+          <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="room-card">
+              <div class="room-img-wrapper">
+                <img src="images/room-villa.jpg" alt="Luxury Villa" class="room-img" loading="lazy">
+                <div class="room-badge bg-warning text-dark fw-bold">Top Signature</div>
+                <div class="room-price-tag">$1,200 <span>/ Night</span></div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Luxury Pool Villa</h3>
+                <div class="room-rating mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <span class="text-muted small ms-1">(5.0)</span>
+                </div>
+                <p class="small text-muted mb-3">Our ultimate private sanctuary featuring an infinity plunge pool, sun terrace, outdoor jacuzzi, and 24/7 dedicated butler service.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-wifi text-warning me-1"></i> Free WiFi</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-cup-hot text-warning me-1"></i> Breakfast</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-water text-warning me-1"></i> Ocean & Pool View</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-snow text-warning me-1"></i> Air Conditioning</span>
+                  <span class="badge bg-light text-dark me-1 mb-1"><i class="bi bi-droplet text-warning me-1"></i> Luxury Bathroom</span>
+                </div>
+                <div class="room-features border-top pt-2 mt-auto">
+                  <span><i class="bi bi-people"></i> 4 Guests</span>
+                  <span><i class="bi bi-bounding-box-circles"></i> 180 m²</span>
+                </div>
+                <button class="btn btn-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ROOM EXPERIENCE SECTION (SPLIT LAYOUT)
+         ========================================================================== -->
+    <section class="section-padding bg-accent-custom">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">CRAFTED FOR PERFECTION</span>
+          <h2 class="section-heading">The Cap Resorts Room Experience</h2>
+          <p class="text-muted">Immerse yourself in refined elegance engineered to harmonize luxury living with the serenity of nature.</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="images/gallery-6.jpg" alt="Room Experience" class="img-fluid rounded shadow-lg" loading="lazy">
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="row g-4">
+              <!-- Pillar 1: Luxury Comfort -->
+              <div class="col-sm-6">
+                <div class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm">
+                  <div class="why-icon-box mb-3" style="width: 54px; height: 54px;">
+                    <i class="bi bi-heart-pulse fs-3"></i>
+                  </div>
+                  <h4 class="font-heading text-primary-custom h5 mb-2">Luxury Comfort</h4>
+                  <p class="small text-muted mb-0">Custom hypoallergenic Egyptian cotton bedding, plush goose feather pillows, and climate control for restful sleep.</p>
+                </div>
+              </div>
+
+              <!-- Pillar 2: Nature Views -->
+              <div class="col-sm-6">
+                <div class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm">
+                  <div class="why-icon-box mb-3" style="width: 54px; height: 54px;">
+                    <i class="bi bi-tree fs-3"></i>
+                  </div>
+                  <h4 class="font-heading text-primary-custom h5 mb-2">Nature Views</h4>
+                  <p class="small text-muted mb-0">Floor-to-ceiling glass doors opening onto private verandas facing virgin rainforest and turquoise bays.</p>
+                </div>
+              </div>
+
+              <!-- Pillar 3: Premium Interiors -->
+              <div class="col-sm-6">
+                <div class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm">
+                  <div class="why-icon-box mb-3" style="width: 54px; height: 54px;">
+                    <i class="bi bi-gem fs-3"></i>
+                  </div>
+                  <h4 class="font-heading text-primary-custom h5 mb-2">Premium Interiors</h4>
+                  <p class="small text-muted mb-0">Handcrafted teakwood furniture, natural stone bathrooms, rain showers, and organic spa bath products.</p>
+                </div>
+              </div>
+
+              <!-- Pillar 4: Personalised Hospitality -->
+              <div class="col-sm-6">
+                <div class="glass-card bg-white p-4 h-100 rounded border border-secondary border-opacity-25 shadow-sm">
+                  <div class="why-icon-box mb-3" style="width: 54px; height: 54px;">
+                    <i class="bi bi-person-badge fs-3"></i>
+                  </div>
+                  <h4 class="font-heading text-primary-custom h5 mb-2">Personalised Hospitality</h4>
+                  <p class="small text-muted mb-0">24/7 dedicated butler service, in-room dining, nightly turndown gifts, and customized excursion planning.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. PACKAGES SECTION (4 LUXURY PACKAGES)
+         ========================================================================== -->
+    <section id="packages-list" class="section-padding">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+          <span class="section-tag">CURATED EXPERIENCES</span>
+          <h2 class="section-heading">Special Resort Packages</h2>
+          <p class="text-muted">Unforgettable getaway packages designed for day visits, romantic celebrations, family retreats, and corporate summits.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Package 1: Day Out Package -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="package-card h-100">
+              <h3>Day Out Package</h3>
+              <div class="package-price">$250 <span>/ Person</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> Full Day Pool & Beach Access</li>
+                <li><i class="bi bi-check-circle-fill"></i> Gourmet Buffet Lunch & Drinks</li>
+                <li><i class="bi bi-check-circle-fill"></i> Nature Trails & Water Sports</li>
+                <li><i class="bi bi-check-circle-fill"></i> Evening Tea & High Snacks</li>
+              </ul>
+              <button class="btn btn-outline-gold w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- Package 2: Couple Package -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="package-card featured h-100">
+              <div class="package-ribbon">Romantic</div>
+              <h3>Couple Package</h3>
+              <div class="package-price">$1,850 <span>/ 3 Days</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> 2 Nights in Pool Villa</li>
+                <li><i class="bi bi-check-circle-fill"></i> Candlelight Beach Dinner</li>
+                <li><i class="bi bi-check-circle-fill"></i> Sunset Yacht Cruise</li>
+                <li><i class="bi bi-check-circle-fill"></i> Couple Spa Session</li>
+              </ul>
+              <button class="btn btn-gold w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- Package 3: Family Package -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="package-card h-100">
+              <h3>Family Package</h3>
+              <div class="package-price">$2,900 <span>/ 4 Days</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> 3 Nights Family Cottage</li>
+                <li><i class="bi bi-check-circle-fill"></i> All-Inclusive Family Dining</li>
+                <li><i class="bi bi-check-circle-fill"></i> Guided Nature & Kids Activities</li>
+                <li><i class="bi bi-check-circle-fill"></i> Private Beach Bonfire Night</li>
+              </ul>
+              <button class="btn btn-outline-gold w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- Package 4: Corporate Package -->
+          <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="package-card h-100">
+              <h3>Corporate Package</h3>
+              <div class="package-price">$4,500 <span>/ Summit</span></div>
+              <ul class="package-list">
+                <li><i class="bi bi-check-circle-fill"></i> Executive Suite Stay (10 Guests)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Full Conference Hall Facilities</li>
+                <li><i class="bi bi-check-circle-fill"></i> Team Building & Yacht Tours</li>
+                <li><i class="bi bi-check-circle-fill"></i> Customized Banquet Catering</li>
+              </ul>
+              <button class="btn btn-outline-gold w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. BOOKING CTA BANNER
+         ========================================================================== -->
+    <section class="contact-cta-section text-center text-white py-5">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="zoom-in">
+            <span class="section-tag text-secondary-custom">YOUR SANCTUARY AWAITS</span>
+            <h2 class="display-4 font-heading fw-bold mb-3 text-white">Plan Your Perfect Stay</h2>
+            <p class="fs-5 text-white-50 max-w-650 mx-auto mb-4">Book your luxury suite or package today and let our concierge craft an unforgettable experience.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <button class="btn btn-gold py-3 px-5 fs-6 fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              <a href="index.html#contact" class="btn btn-outline-gold py-3 px-4 fs-6 fw-bold">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer-cap">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo footer-logo-only mb-3 p-0 d-inline-block" href="index.html">
+            <img src="images/logo.png" alt="Cap Resort Logo" class="logo footer-logo-img">
+          </a>
+          <p class="small text-white-50 mb-4">Cap Resorts is an award-winning 5-star luxury sanctuary offering exquisite villas, holistic spa wellness, and Michelin-standard dining nestled in pristine natural landscapes.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms-packages.html">Rooms & Packages</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Details -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Details</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span class="small">Cap Bay Sanctuary, Emerald Coast Parkway, Haven Bay 90210</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="small">+1 (800) 555-0199 / +1 (800) 555-0200</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="small">info@capresorts.in</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-globe"></i>
+            <span class="small">www.capresorts.in</span>
+          </div>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Newsletter</h5>
+          <p class="small text-white-50 mb-3">Subscribe to receive exclusive retreat offers, seasonal packages, and private invitations.</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email..." required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom text-center">
+        <p class="mb-0 text-white-50">&copy; 2026 Cap Resorts. All Rights Reserved. Designed with Luxury & Precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card-dark text-white p-4">
+        <div class="modal-header border-bottom border-secondary border-opacity-25 pb-3">
+          <h5 class="modal-title font-heading fs-3 text-secondary-custom" id="bookingModalLabel"><i class="bi bi-gem me-2"></i> Reserve Your Stay at Cap Resorts</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <form class="booking-form row g-3">
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Full Name</label>
+              <input type="text" class="form-control bg-dark text-white border-secondary border-opacity-50" placeholder="John Doe" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Email Address</label>
+              <input type="email" class="form-control bg-dark text-white border-secondary border-opacity-50" placeholder="john@example.com" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Accommodation Type</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50">
+                <option value="deluxe">Deluxe Room ($450 / night)</option>
+                <option value="premium">Premium Room ($650 / night)</option>
+                <option value="family-suite">Family Suite ($950 / night)</option>
+                <option value="cottage">Standalone Cottage ($800 / night)</option>
+                <option value="villa">Luxury Pool Villa ($1,200 / night)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Guests</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4+">4+ Guests</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Check-in Date</label>
+              <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-uppercase tracking-wider">Check-out Date</label>
+              <input type="date" class="form-control bg-dark text-white border-secondary border-opacity-50" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label small text-uppercase tracking-wider">Special Requests / Preferences</label>
+              <textarea class="form-control bg-dark text-white border-secondary border-opacity-50" rows="3" placeholder="Airport transfer, dietary requests, spa arrangements..."></textarea>
+            </div>
+            <div class="col-12 mt-4 text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-gold py-2 px-4">Confirm Reservation Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
