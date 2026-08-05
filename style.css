@@ -1231,3 +1231,126 @@ a {
   color: var(--secondary);
   transform: translateY(-5px);
 }
+
+/* ==========================================================================
+   16. UNIQUE LUXURY PRELOADER
+   ========================================================================== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #0C4B43 0%, #052420 100%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s ease;
+}
+
+.preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+}
+
+.preloader-emblem {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.preloader-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--secondary);
+  border-right-color: var(--secondary-light);
+  animation: preloaderSpin 1.8s linear infinite;
+}
+
+.preloader-ring-outer {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 1px dashed rgba(201, 168, 106, 0.4);
+  animation: preloaderSpinReverse 6s linear infinite;
+}
+
+.preloader-logo {
+  height: 75px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  background: #FFFFFF !important;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4) !important;
+  animation: preloaderPulse 2s ease-in-out infinite alternate;
+}
+
+.preloader-progress-bar {
+  width: 200px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.preloader-progress-line {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--secondary) 0%, #DFBA79 100%);
+  box-shadow: 0 0 12px rgba(201, 168, 106, 0.9);
+  transition: width 0.15s linear;
+}
+
+.preloader-counter {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--secondary);
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.preloader-tagline {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@keyframes preloaderSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes preloaderSpinReverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes preloaderPulse {
+  0% { transform: scale(0.96); filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3)); }
+  100% { transform: scale(1.04); filter: drop-shadow(0 6px 20px rgba(201,168,106,0.6)); }
+}

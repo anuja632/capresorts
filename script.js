@@ -17,6 +17,43 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
+     0. LUXURY PRELOADER ANIMATION
+     -------------------------------------------------------------------------- */
+  const preloader = document.getElementById('preloader');
+  const progressBar = document.getElementById('preloaderProgress');
+  const counter = document.getElementById('preloaderCounter');
+
+  if (preloader) {
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += Math.floor(Math.random() * 15) + 8;
+      if (progress >= 100) {
+        progress = 100;
+        clearInterval(interval);
+        if (progressBar) progressBar.style.width = '100%';
+        if (counter) counter.innerText = '100%';
+        setTimeout(() => {
+          preloader.classList.add('loaded');
+        }, 250);
+      } else {
+        if (progressBar) progressBar.style.width = `${progress}%`;
+        if (counter) counter.innerText = `${progress}%`;
+      }
+    }, 50);
+
+    // Fallback safety timeout
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        if (preloader && !preloader.classList.contains('loaded')) {
+          if (progressBar) progressBar.style.width = '100%';
+          if (counter) counter.innerText = '100%';
+          preloader.classList.add('loaded');
+        }
+      }, 600);
+    });
+  }
+
+  /* --------------------------------------------------------------------------
      1. STICKY NAVBAR ON SCROLL
      -------------------------------------------------------------------------- */
   const navbar = document.querySelector('.navbar-cap');
