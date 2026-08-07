@@ -197,27 +197,65 @@ document.addEventListener('DOMContentLoaded', () => {
      -------------------------------------------------------------------------- */
   const bookingForms = document.querySelectorAll('.booking-form');
   const bookingModalEl = document.getElementById('bookingModal');
+  const whatsappNumber = '919995950900';
 
   bookingForms.forEach(form => {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       
       const submitBtn = this.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
+      const originalText = submitBtn ? submitBtn.innerHTML : '';
       
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Processing...';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Processing...';
+      }
+
+      // Collect form field values for WhatsApp message
+      const formFields = Array.from(this.querySelectorAll('input, select, textarea'));
+      const details = [];
+
+      formFields.forEach(field => {
+        const value = field.value ? field.value.trim() : '';
+        if (value) {
+          // Find associated label or fallback to name/placeholder
+          let labelText = '';
+          const labelEl = field.labels && field.labels.length > 0 ? field.labels[0] : field.closest('.col-md-6, .col-12, div')?.querySelector('label');
+          if (labelEl) {
+            labelText = labelEl.innerText.trim();
+          } else {
+            labelText = field.name || field.placeholder || 'Detail';
+          }
+          
+          // Format selected option text if select element
+          let displayValue = value;
+          if (field.tagName === 'SELECT' && field.selectedIndex >= 0) {
+            displayValue = field.options[field.selectedIndex].text.trim();
+          }
+          details.push(`*${labelText}*: ${displayValue}`);
+        }
+      });
+
+      const messageHeader = `*Cap Resorts - Booking & Enquiry Request*\n----------------------------------------\n`;
+      const fullMessage = messageHeader + details.join('\n');
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
 
       setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
         
         // Show success alert inside form or modal
         const alertBox = document.createElement('div');
         alertBox.className = 'alert alert-success mt-3 glass-card text-white border-0 shadow-lg';
-        alertBox.innerHTML = '<i class="bi bi-check-circle-fill text-warning me-2"></i> Thank you! Your reservation request has been received. Our concierge will contact you shortly.';
+        alertBox.innerHTML = '<i class="bi bi-whatsapp text-warning me-2"></i> Thank you! Your request has been recorded. Redirecting to WhatsApp concierge (+91 99959 50900)...';
         
         form.appendChild(alertBox);
+
+        // Open WhatsApp with pre-filled message
+        window.open(whatsappUrl, '_blank');
+
         form.reset();
 
         setTimeout(() => alertBox.remove(), 6000);
