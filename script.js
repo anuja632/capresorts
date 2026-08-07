@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
   startCounters();
 
   /* --------------------------------------------------------------------------
-     4. GALLERY LIGHTBOX MODAL
+     4. GALLERY LIGHTBOX MODAL & CATEGORY FILTERING
      -------------------------------------------------------------------------- */
   const galleryItems = document.querySelectorAll('.gallery-item');
   const galleryModalEl = document.getElementById('galleryModal');
@@ -188,6 +188,30 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modalTitle) modalTitle.innerText = title;
         
         galleryModal.show();
+      });
+    });
+  }
+
+  // Interactive Category Filter Buttons
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const masonryItems = document.querySelectorAll('.gallery-masonry-item');
+
+  if (filterBtns.length > 0 && masonryItems.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        const filterValue = this.getAttribute('data-filter');
+
+        masonryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filterValue === 'all' || filterValue === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
       });
     });
   }
